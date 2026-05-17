@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur Firmino Martins — Desenvolvedor FullStack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">AFM<span class="dot">.</span></span>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span class="icon-sun">☀︎</span>
+        <span class="icon-moon">☽</span>
+      </button>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#habilidades" class="mobile-link">Skills</a>
+      <a href="#projetos" class="mobile-link">Projetos</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+      <h1 class="hero-title reveal">
+        Arthur<br/>
+        <em>Firmino</em><br/>
+        Martins
+      </h1>
+      <p class="hero-role reveal">
+        <span class="mono">~/</span> Desenvolvedor FullStack
+        <span class="separator">·</span>
+        Python Developer
+      </p>
+      <p class="hero-location reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Anápolis, Goiás — Brasil
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contato" class="btn btn-primary">Entrar em contato</a>
+        <a href="#projetos" class="btn btn-ghost">Ver projetos</a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="mono">01 /</span> Sobre mim
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Tecnologia como<br/><em>ferramenta de impacto</em></h2>
+          <p>Sou um profissional apaixonado por tecnologia e inovação, especializado na implantação do ERP <strong>Sankhya</strong> e no desenvolvimento com <strong>Python</strong>. Combino visão técnica com foco na entrega de soluções escaláveis e de alta qualidade.</p>
+          <p>Minha atuação abrange desde a configuração e customização do Sankhya até a automação de processos e desenvolvimento de integrações, sempre com atenção à experiência do usuário e à eficiência operacional.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">Python</span>
+              <span class="stat-label">Principal stack</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">GO</span>
+              <span class="stat-label">Anápolis, Brasil</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Em aprendizado</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-inner">
+            <div class="card-avatar">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4E03AQEobOxtxkUaSg/profile-displayphoto-crop_800_800/B4EZl2xRuUHcAI-/0/1758634256822?e=1780531200&v=beta&t=IQloL6Xvrk7EJptBgl6xjSF8rrYJygngfaZNg0s3mQE"
+                alt="Arthur Firmino Martins"
+                class="avatar-photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="avatar-placeholder" style="display:none">AF</div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="card-info">
+              <h3>Arthur Firmino Martins</h3>
+              <p class="mono">Desenvolvedor FullStack</p>
+              <div class="card-tags">
+                <span>Python</span>
+                <span>ERP Sankhya</span>
+                <span>Oracle SQL</span>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/arthur-firmino-martins" target="_blank" class="card-linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="mono">02 /</span> Habilidades
+      </div>
+      <h2 class="section-title reveal">Stack &amp; <em>Ferramentas</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Python</h3>
+          <p>Scripts, automações e integrações com Python moderno — primeira linguagem de desenvolvimento principalmente para automação com <sk-text-input
+              sk-value="ctrl.value"
+              sk-enabled="true"
+              sk-required="false"
+              sk-change="ctrl.onChange()">
+          </sk-text-input>.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Java</h3>
+          <p>Desenvolvimento de aplicações robustas e customizações para sistemas empresariais com Java.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Criação de interfaces dinâmicas e scripts client-side para automação e interatividade web.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+          </div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Estruturação e estilização de páginas e interfaces web responsivas, modernas e acessíveis.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Oracle SQL</h3>
+          <p>Modelagem, queries avançadas e manutenção de bancos Oracle — base do ERP Sankhya.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+
+        <div class="skill-card reveal skill-card-highlight">
+          <div class="skill-icon skill-icon-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>ERP Sankhya <span class="badge-main">Principal</span></h3>
+          <p>Implantação, configuração, customização e suporte do ERP Sankhya — módulos financeiro, fiscal, estoque e RH.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>APIs &amp; Integrações</h3>
+          <p>Consumo e integração de APIs RESTful para conectar o Sankhya e outros sistemas.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Suporte &amp; Treinamento</h3>
+          <p>Capacitação de usuários e suporte técnico durante e após processos de implantação.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Automação de Processos</h3>
+          <p>Criação de fluxos automatizados para otimizar rotinas e reduzir retrabalho operacional.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="mono">03 /</span> Projetos
+      </div>
+      <h2 class="section-title reveal">Trabalhos em <em>destaque</em></h2>
+      <div class="projects-list">
+
+        <div class="project-item reveal">
+          <div class="project-num mono">01</div>
+          <div class="project-info">
+            <h3>Automação com Python</h3>
+            <p>Scripts e ferramentas desenvolvidas em Python para automatizar processos repetitivos e gerar relatórios de forma eficiente.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Automação</span>
+              <span>Scripts</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-num mono">02</div>
+          <div class="project-info">
+            <h3>Implantação de Sistemas ERP</h3>
+            <p>Coordenação de projetos de implantação de sistemas empresariais, desde o levantamento de requisitos até a entrega e treinamento final.</p>
+            <div class="project-tags">
+              <span>ERP</span>
+              <span>Gestão</span>
+              <span>Suporte</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-num mono">03</div>
+          <div class="project-info">
+            <h3>Integração de APIs</h3>
+            <p>Desenvolvimento de integrações entre sistemas utilizando APIs REST, facilitando o fluxo de dados entre plataformas distintas.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>REST API</span>
+              <span>Integração</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section-contact" id="contato">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="mono">04 /</span> Contato
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <h2 class="section-title">Vamos <em>conversar?</em></h2>
+          <p>Estou aberto a novas oportunidades, parcerias e projetos. Entre em contato e vamos construir algo juntos.</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/arthur-firmino-martins" target="_blank" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/arthur-firmino-martins
+            </a>
+            <a href="mailto:arthurfirminomartins@gmail.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              arthurfirminomartins@gmail.com
+            </a>
+            <a href="https://wa.me/5562995187127?text=Olá%2C%20Arthur%21%20Acabei%20de%20ver%20seu%20portfólio%20e%20queria%20saber%20mais%20sobre%20seus%20serviços." target="_blank" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l6.29-.97C10.01 21.64 11.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.41 0-2.73-.35-3.88-.95l-.28-.15-2.89.44.44-2.89-.15-.28C4.35 14.73 4 13.41 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm3.5-9c-.41 0-.75.33-.75.75s.33.75.75.75.75-.33.75-.75-.33-.75-.75-.75zm-7 0c-.41 0-.75.33-.75.75s.33.75.75.75.75-.33.75-.75-.33-.75-.75-.75zm3.5 6.5c1.66 0 3.31-.67 4.66-1.66-.9.23-1.86.35-2.86.35s-1.96-.12-2.86-.35c1.35.99 3 1.66 4.66 1.66z"/></svg>
+              (62) 99518-7127
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono">© 2026 Arthur Firmino Martins</span>
+      <span class="footer-made">Feito com <span class="heart">♥</span> em Anápolis, GO</span>
+      <a href="https://www.linkedin.com/in/arthur-firmino-martins" target="_blank" class="footer-linkedin">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
